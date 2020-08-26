@@ -1,0 +1,75 @@
+.header{
+    background-color: rgb(76, 152, 187);
+    height: 250px;
+    background-image: url(imagens/back-image.jpg) ;
+}
+
+.header h1{
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+    padding-top: 100px;
+    margin-top: 0px;
+    margin-right: 20%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.header h2{
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    color: white;
+    margin-top: 0px;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.header img{
+    float: left;
+    margin-top: 25px;
+    margin-left: 20%;
+    border-radius: 50%;
+}
+
+body{
+    margin: 0px;
+    background-color: white;
+}
+
+.body-text{
+    
+    margin: auto;
+    width: 70%;
+    padding-left: 10%;
+}
+
+.about{
+    font-family:'Lucida Sans',  sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0bb7c7;
+}
+
+h3{
+    color: #0bb7c7;
+    font-size: 25px;
+}
+
+strong{
+    color: #0bb7c7;
+}
+
+.itensI{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.itensP{
+    font-style: italic;
+    font-size: 20px;
+}
