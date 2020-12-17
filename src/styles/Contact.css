@@ -1,0 +1,10 @@
+.contact-container {
+  width: 95%;
+  margin: 300px auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+span {
+  font-weight: 700;
+}
