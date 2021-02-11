@@ -1,6 +1,7 @@
 .projects-container {
   width: 70%;
-  margin: 100px auto;
+  margin: auto;
+  background-color: #fafafa;
 }
 
 .projects-text {
@@ -9,7 +10,10 @@
 }
 
 .projects-text h3 {
-  font-size: 35px;
+  padding-top: 50px;
+  font-size: 44px;
+  margin-bottom: 30px;
+  color: #D89229;
 }
 
 .projects-text p {
@@ -29,14 +33,14 @@
   margin: 10px 10px;
   width: 300px;
   height: 300px;
-  border: 5px solid #e5e5e55d;
+  border: 5px solid white;
+  background-color: white;
   border-radius: 5px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
-  height: 65%;
-  background-color: rgb(238, 236, 236);
+  height: 25%;
   overflow: hidden;
   border-radius: 5px;
 
@@ -47,18 +51,25 @@
   flex-direction: column;
   width: 90%;
   margin: auto;
+  background-color: white;
 }
 
 .project-info h3 {
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
   font-size: 15px;
   font-weight: 300;
   color: gray;
 }
 
+.project-info p {
+  
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
 .project-image img {
   width: 100%;
-  border-bottom: 5px solid #f3f3f3;
 }
 
 .project-button {
@@ -99,10 +110,10 @@
 @media screen and (max-width: 682px) {
   .projects-container {
     margin-top: 30px;
-    width: 95%;
+    width: 90%;
   }
   .projects-text {
-    width: 90%;
+    width: 80%;
     text-align: justify;
   }
 }

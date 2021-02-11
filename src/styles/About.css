@@ -2,7 +2,7 @@
   display: flex;
   margin: auto;
   width: 70%;
-  background-color: #e5e5e55d;
+  background-color: #FAFAFA;
 }
 
 .about-container-text {
@@ -18,13 +18,14 @@
 }
 
 .about-container-text img {
-  margin: 10px auto;
+  margin: 50px auto 80px auto;
   height: 100px;
 }
 
 .about-container-text h3 {
-  margin: 10px 0;
+  padding-top: 50px;
   font-size: 44px;
+  color: #D89229;
 }
 
 .about-container-text h5 {
@@ -41,8 +42,7 @@
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  margin-top: 20px;
+  margin: 40px auto 100px auto;
   justify-content: space-around;
 }
 
@@ -67,10 +67,17 @@
   .carousel-photo {
     display: block;
   }
+
   .about-photo-container {
     display: none;
   }
+
   .about-container {
     width: 90%;
+  }
+
+  .about-container-text {
+    width: 80%;
+    text-align: justify;
   }
 }

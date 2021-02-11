@@ -1,15 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react';
 import '../styles/Contact.css';
 
-export class Contact extends Component {
-  render() {
-    return (
-      <div className="contact-container">
-        <p>Entre em contato comigo atraves do email: <span>daniel_mld@hotmail.com</span></p>
-        <p>Página em construção!</p>
+function Contact() {
+  return (
+    <div className="contact-container">
+      Entre em contato comigo:
+      <div>
+        daniel_mld@hotmail.com
       </div>
-    )
-  }
+      <div>
+        linkedin.com/in/danielmlduarte
+      </div>
+      <div>
+        github.com/danielmlduarte
+      </div>
+      <div>
+        (31) 9977-06994
+      </div>
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;

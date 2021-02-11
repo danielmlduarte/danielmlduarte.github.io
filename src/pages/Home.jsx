@@ -1,31 +1,53 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-import '../styles/Home.css'
-import ProfileImage from '../Images/FotoParqueSemBG.png';
+import React from 'react';
+import '../styles/Home.css';
+import frontEndImage from '../Images/frontend.png';
 
-export const Home = () => {
+function Home() {
+  const downloadCurriculum = async () => {
+    try {
+      const response = await fetch('https://raw.githubusercontent.com/danielmlduarte/danielmlduarte/master/Daniel%20M%C3%BAcio%20Lima%20Duarte.pdf');
+      const file = await response.blob();
+      const url = window.URL.createObjectURL(file);
+      const selector = document.createElement('a');
+      selector.href = url;
+      selector.download = 'Daniel Múcio Lima Duarte.pdf';
+      selector.click();
+    } catch (error) {
+      return error;
+    }
+  };
+
   return (
-    <div>
-      <div className="home-main">
-        <img className="home-image" src={ProfileImage} alt=""/>
-        <p className="home-speak-text">Olá! Sou o Daniel Duarte, Desenvolvedor Front-End e estudante de desenvolvimento Full Stack!!!</p>
-        <p className="home-text">Sabia quem sou eu, conheça meus projetos, com quais stacks eu trabalho,  veja um pouco do meu <span>{"<code>"}</span> e muito mais!</p>
+    <div className="home-main">
+      {/* <p className="home-speak-text">Olá! Sou o Daniel Duarte,
+      Desenvolvedor Front-End e estudante de desenvolvimento Full Stack!!!</p> */}
+      <img className="home-image" src={ frontEndImage } alt="" />
+      <div className="home-main-content">
+        <img
+          className="home-avatar"
+          src="https://avatars2.githubusercontent.com/u/69773207?s=460&u=3c1497fe8cc953d0419c15955dcaf4b683fc4d70&v=4"
+          alt="Daniel Profile"
+        />
+        <div>
+          <p
+            className="home-text"
+          >
+            Nesse site, você irá encontrar os meus projetos
+            desenvolvidos durante minha formação na trybe.
+            Saberá mais sobre mim, com quais stacks eu trabalho atualmente,
+            e quais eu estou em processo de aprendizagem!
+          </p>
+          <button
+            className="home-button"
+            type="button"
+            onClick={ downloadCurriculum }
+          >
+            Faça o download do meu currículo
+          </button>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-Home.propTypes = {
-  prop: PropTypes
-}
-
-const mapStateToProps = (state) => ({
-  
-})
-
-const mapDispatchToProps = {
-  
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default Home;

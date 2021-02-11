@@ -1,21 +1,20 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export const ProjectDetails = (props) => {
-  const { match: { params: { name } } } = props;
+function ProjectDetails({ match: { params: { name } } }) {
   return (
     <div>
       {`Página de detalhes do projeto ${name}`}
     </div>
-  )
+  );
 }
 
-const mapStateToProps = (state) => ({
-  
-})
+ProjectDetails.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+};
 
-const mapDispatchToProps = {
-  
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ProjectDetails)
+export default ProjectDetails;
