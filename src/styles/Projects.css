@@ -1,19 +1,19 @@
 .projects-container {
-  width: 70%;
-  margin: auto;
   background-color: #fafafa;
+  margin: auto;
+  width: 70%;
 }
 
 .projects-text {
-  width: 60%;
   margin: auto;
+  width: 60%;
 }
 
 .projects-text h3 {
-  padding-top: 50px;
+  color: #d89229;
   font-size: 44px;
   margin-bottom: 30px;
-  color: #D89229;
+  padding-top: 50px;
 }
 
 .projects-text p {
@@ -21,49 +21,48 @@
 }
 
 .projects-section {
-  margin: 50px auto;
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin: 50px auto;
 }
 
 .project-card {
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  margin: 10px 10px;
-  width: 300px;
   height: 300px;
-  border: 5px solid white;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  width: 300px;
 }
 
 .project-image {
+  border-radius: 5px;
   height: 25%;
   overflow: hidden;
-  border-radius: 5px;
 
 }
 
 .project-info {
+  background-color: white;
   display: flex;
   flex-direction: column;
-  width: 90%;
   margin: auto;
-  background-color: white;
+  width: 90%;
 }
 
 .project-info h3 {
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 5px;
+  color: gray;
+  font-family: Roboto , sans-serif;
   font-size: 15px;
   font-weight: 300;
-  color: gray;
+  margin-bottom: 5px;
 }
 
 .project-info p {
-  
   font-size: 12px;
   margin-bottom: 2px;
 }
@@ -73,28 +72,28 @@
 }
 
 .project-button {
-  margin: 10px 0;
   align-self: center;
-  display: block;
   background-color: #c4c4c4;
   border-radius: 5px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   color: black;
-  font-weight: 500;
+  display: block;
+  font-family: Roboto , sans-serif;
   font-size: 13px;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   height: 25px;
+  line-height: 25px;
+  margin: 10px 0;
   text-align: center;
   text-decoration: none;
   transition: 0.3s;
   width: 150px;
-  line-height: 25px;
 }
 
 .project-button:hover {
   background-color: black;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .project-button img {
@@ -107,13 +106,15 @@
   filter: invert(100%);
 }
 
-@media screen and (max-width: 682px) {
+@media screen and ( max-width : 682px ) {
+
   .projects-container {
     margin-top: 30px;
     width: 90%;
   }
+
   .projects-text {
-    width: 80%;
     text-align: justify;
+    width: 80%;
   }
 }

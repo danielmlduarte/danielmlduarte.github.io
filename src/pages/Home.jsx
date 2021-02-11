@@ -28,7 +28,7 @@ function Home() {
           src="https://avatars2.githubusercontent.com/u/69773207?s=460&u=3c1497fe8cc953d0419c15955dcaf4b683fc4d70&v=4"
           alt="Daniel Profile"
         />
-        <div>
+        <div className="home-text-content">
           <p
             className="home-text"
           >

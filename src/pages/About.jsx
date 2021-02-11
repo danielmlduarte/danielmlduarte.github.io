@@ -28,7 +28,7 @@ function About() {
           <p>
             Desde de pequeno, sempre muito curioso, me apaixonei por
             tecnologia e pela computação, que pra mim,
-            não é só um trabalho, é um estilo de vida.
+            não é só um trabalho, mas um estilo de vida.
           </p>
           <div className="about-container-stacks">
             <img src={ htmlCssJsImage } alt="" />
