@@ -34,9 +34,9 @@ function Projects({ projectsList }) {
 }
 
 Projects.propTypes = {
-  projectsList: PropTypes.shape({
-    map: PropTypes.func.isRequired,
-  }).isRequired,
+  projectsList: PropTypes.arrayOf(
+    PropTypes.shape,
+  ).isRequired,
 };
 
 const mapStateToProps = ((state) => ({

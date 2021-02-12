@@ -45,7 +45,7 @@ export const fetchGitHubProjectInfos = async (project) => {
     const gitPageUrl = getProjectGitHubPage(object, name);
     return gitPageUrl;
   } catch (error) {
-    alert(error);
+    return error;
   }
 };
 
@@ -60,7 +60,6 @@ const fetchGitHubProjectDescription = async (url) => {
 };
 
 const getProjectGitHubImage = (object) => {
-  console.log(object);
   const ImagemObject = (object.find((file) => file.name === 'description.txt'));
   let gitHubProjectImage = '';
   if (ImagemObject) {
@@ -74,7 +73,6 @@ export const fetchGitHubProjectImage = async (endpoint) => {
     const response = await fetch(endpoint);
     const object = await response.json();
     const gitImageProject = getProjectGitHubImage(object);
-    console.log(gitImageProject);
     return gitImageProject;
   } catch (error) {
     return error;

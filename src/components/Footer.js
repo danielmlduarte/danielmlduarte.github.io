@@ -7,7 +7,7 @@ export default function Footer() {
       <p>© Daniel Duarte</p>
       <p>
         Página feita e constantemente atualizada por mim,
-        Daniel Duarte, com React, Redux, Bootstrap e muito carinho!
+        Daniel Duarte, com React, Redux e Bootstrap!
       </p>
     </div>
   );

@@ -10,12 +10,13 @@ function ProjectCard({ project }) {
   const [shortDescription, setShortDescription] = useState('');
 
   const reader = (file) => {
-    console.log(file);
-    return new Promise((resolve) => {
-      const fileReader = new FileReader();
-      fileReader.onload = () => resolve(fileReader.result);
-      fileReader.readAsText(file);
-    });
+    if (file) {
+      return new Promise((resolve) => {
+        const fileReader = new FileReader();
+        fileReader.onload = () => resolve(fileReader.result);
+        fileReader.readAsText(file);
+      });
+    }
   };
 
   const readFile = async (file) => {
@@ -33,7 +34,6 @@ function ProjectCard({ project }) {
     if (imageUrl !== '') {
       let descriptions = await readFile(imageUrl);
       descriptions = descriptions.split('\n');
-      console.log(descriptions);
       setStacks(descriptions[0]);
       setTime(descriptions[1]);
       setShortDescription(descriptions[2]);
@@ -42,7 +42,7 @@ function ProjectCard({ project }) {
 
   useEffect(() => {
     fetchProjectInfos();
-  }, []);
+  });
 
   const { url, name } = project;
   const nameReplaced = name.replaceAll('-', ' ').toUpperCase();
@@ -73,9 +73,7 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     url: PropTypes.string.isRequired,
     files: PropTypes.string.isRequired,
-    name: PropTypes.shape({
-      replaceAll: PropTypes.func.isRequired,
-    }).isRequired,
+    name: PropTypes.string.isRequired,
   }).isRequired,
 };
 

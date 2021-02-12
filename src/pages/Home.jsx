@@ -33,9 +33,8 @@ function Home() {
             className="home-text"
           >
             Nesse site, você irá encontrar os meus projetos
-            desenvolvidos durante minha formação na trybe.
-            Saberá mais sobre mim, com quais stacks eu trabalho atualmente,
-            e quais eu estou em processo de aprendizagem!
+            desenvolvidos durante minha formação na Trybe e
+            com quais stacks eu trabalho atualmente.
           </p>
           <button
             className="home-button"
