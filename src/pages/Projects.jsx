@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import '../styles/Projects.css';
 
 function Projects({ projectsList }) {
+  const [isRedirect, setIsRedirect] = useState(false);
+
+  useEffect(() => {
+    if (!projectsList) setIsRedirect(true);
+  }, [projectsList]);
+
   return (
     <div className="projects-container">
+      { (isRedirect) && <Redirect to="/" /> }
       <div className="projects-text">
         <h3>Meus projetos.</h3>
         <p>
@@ -26,7 +34,7 @@ function Projects({ projectsList }) {
         </p>
       </div>
       <div className="projects-section">
-        { projectsList
+        { (projectsList.length) && projectsList
           .map((project, index) => <ProjectCard key={ index } project={ project } />) }
       </div>
     </div>
