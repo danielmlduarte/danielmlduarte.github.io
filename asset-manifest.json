@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.09cd22d2.chunk.css",
-    "main.js": "/static/js/main.e7e2b667.chunk.js",
-    "main.js.map": "/static/js/main.e7e2b667.chunk.js.map",
+    "main.js": "/static/js/main.2bf69dd5.chunk.js",
+    "main.js.map": "/static/js/main.2bf69dd5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.147ab997.js",
     "runtime-main.js.map": "/static/js/runtime-main.147ab997.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
-    "static/js/2.da1caee9.chunk.js": "/static/js/2.da1caee9.chunk.js",
-    "static/js/2.da1caee9.chunk.js.map": "/static/js/2.da1caee9.chunk.js.map",
+    "static/js/2.f3766303.chunk.js": "/static/js/2.f3766303.chunk.js",
+    "static/js/2.f3766303.chunk.js.map": "/static/js/2.f3766303.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
     "static/css/main.09cd22d2.chunk.css.map": "/static/css/main.09cd22d2.chunk.css.map",
-    "static/js/2.da1caee9.chunk.js.LICENSE.txt": "/static/js/2.da1caee9.chunk.js.LICENSE.txt",
+    "static/js/2.f3766303.chunk.js.LICENSE.txt": "/static/js/2.f3766303.chunk.js.LICENSE.txt",
     "static/media/FotoMuseuVideoGame1.c98fdb0b.jpg": "/static/media/FotoMuseuVideoGame1.c98fdb0b.jpg",
     "static/media/FotoMuseuVideoGame2.02fdcea0.jpg": "/static/media/FotoMuseuVideoGame2.02fdcea0.jpg",
     "static/media/FotoPraiaCostas.61e5c69b.jpg": "/static/media/FotoPraiaCostas.61e5c69b.jpg",
@@ -30,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.147ab997.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.da1caee9.chunk.js",
+    "static/js/2.f3766303.chunk.js",
     "static/css/main.09cd22d2.chunk.css",
-    "static/js/main.e7e2b667.chunk.js"
+    "static/js/main.2bf69dd5.chunk.js"
   ]
 }
