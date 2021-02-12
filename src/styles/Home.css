@@ -1,6 +1,6 @@
 .home-main {
   background-color: #b1d6d9;
-  height: 760px;
+  height: 773px;
   margin: 0 10px 40px;
 }
 
@@ -8,7 +8,7 @@
   margin: 0 auto;
   opacity: 0.1;
   position: absolute;
-  width: 100%;
+  width: 99%;
 }
 
 .home-button {
