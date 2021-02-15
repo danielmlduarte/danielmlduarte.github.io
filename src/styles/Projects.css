@@ -131,6 +131,7 @@
 .project-button {
   align-self: center;
   background-color: #c4c4c4;
+  border-color: #c4c4c4;
   border-radius: 5px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   color: black;

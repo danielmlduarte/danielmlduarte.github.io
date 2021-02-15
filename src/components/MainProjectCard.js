@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import gitHubIcon from '../Images/github-brands.svg';
 
-function MainProjectCard({ project }) {
-  const { name, description, stacks, git, run } = project;
+function MainProjectCard({ project: { name, description, stacks, git, run, appOnAir } }) {
   return (
     <div className="main-project-card">
       <div className="main-project-info">
@@ -23,14 +22,16 @@ function MainProjectCard({ project }) {
           <img src={ gitHubIcon } alt="" />
           Visite o repositório
         </a>
-        <a
-          className="project-button"
-          target="_blank"
-          rel="noreferrer"
-          href={ run }
-        >
-          App
-        </a>
+        { (appOnAir)
+          && (
+            <a
+              className="project-button"
+              target="_blank"
+              rel="noreferrer"
+              href={ run }
+            >
+              App
+            </a>) }
       </div>
     </div>
   );
@@ -40,6 +41,7 @@ MainProjectCard.propTypes = {
   project: PropTypes.shape({
     time: PropTypes.string.isRequired,
     team: PropTypes.bool.isRequired,
+    appOnAir: PropTypes.bool.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     stacks: PropTypes.arrayOf(PropTypes.string).isRequired,

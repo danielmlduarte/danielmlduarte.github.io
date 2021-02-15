@@ -10,6 +10,7 @@ const mainProjects = [
     time: '10 dias',
     git: 'https://github.com/danielmlduarte/app-recipes',
     run: 'https://danielmlduarte.github.io/app-recipes/',
+    appOnAir: true,
   },
   {
     name: 'Trivia React Redux',
@@ -19,6 +20,7 @@ const mainProjects = [
     time: '5 dias',
     git: 'https://github.com/danielmlduarte/trivia-react-redux',
     run: 'https://danielmlduarte.github.io/trivia-react-redux',
+    appOnAir: false,
   },
   {
     name: 'React Testing Library',
@@ -28,6 +30,7 @@ const mainProjects = [
     time: '2 dias',
     git: 'https://github.com/danielmlduarte/react-testing-library-practice',
     run: 'https://danielmlduarte.github.io/react-testing-library-practice',
+    appOnAir: false,
   },
   {
     name: 'Starwars Datatable Hooks',
@@ -37,6 +40,7 @@ const mainProjects = [
     time: '2 dias',
     git: 'https://github.com/danielmlduarte/starwars-datatable-hooks',
     run: 'https://danielmlduarte.github.io/starwars-datatable-hooks',
+    appOnAir: false,
   },
   {
     name: 'Trybe Wallet',
@@ -46,6 +50,7 @@ const mainProjects = [
     time: '2 dias',
     git: 'https://github.com/danielmlduarte/trybe-wallet',
     run: 'https://danielmlduarte.github.io/trybe-wallet',
+    appOnAir: false,
   },
   {
     name: 'Frontend Online Store',
@@ -55,6 +60,7 @@ const mainProjects = [
     time: '3 dias',
     git: 'https://github.com/danielmlduarte/frontend-online-store',
     run: 'https://danielmlduarte.github.io/frontend-online-store',
+    appOnAir: false,
   },
 ];
 
