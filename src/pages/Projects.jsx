@@ -29,7 +29,7 @@ function Projects({ projectsList }) {
           até projetos feitos com
           <span> REACT </span>
           usando
-          <span> REDUX, HOOKS e ContextAPI </span>
+          <span> REDUX, HOOKS e ContextAPI. </span>
           Alguns projetos foram feitos aplicando
           <span> MÉTODOS ÁGEIS </span>
           , com a colaboração de outros colegas.
