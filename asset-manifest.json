@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.020cc1f6.chunk.css",
-    "main.js": "/static/js/main.a52e4b38.chunk.js",
-    "main.js.map": "/static/js/main.a52e4b38.chunk.js.map",
+    "main.css": "/static/css/main.861ae1ee.chunk.css",
+    "main.js": "/static/js/main.cd5ca0fa.chunk.js",
+    "main.js.map": "/static/js/main.cd5ca0fa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.147ab997.js",
     "runtime-main.js.map": "/static/js/runtime-main.147ab997.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.f3766303.chunk.js.map": "/static/js/2.f3766303.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.020cc1f6.chunk.css.map": "/static/css/main.020cc1f6.chunk.css.map",
+    "static/css/main.861ae1ee.chunk.css.map": "/static/css/main.861ae1ee.chunk.css.map",
     "static/js/2.f3766303.chunk.js.LICENSE.txt": "/static/js/2.f3766303.chunk.js.LICENSE.txt",
     "static/media/FotoMuseuVideoGame1.c98fdb0b.jpg": "/static/media/FotoMuseuVideoGame1.c98fdb0b.jpg",
     "static/media/FotoMuseuVideoGame2.02fdcea0.jpg": "/static/media/FotoMuseuVideoGame2.02fdcea0.jpg",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.147ab997.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.f3766303.chunk.js",
-    "static/css/main.020cc1f6.chunk.css",
-    "static/js/main.a52e4b38.chunk.js"
+    "static/css/main.861ae1ee.chunk.css",
+    "static/js/main.cd5ca0fa.chunk.js"
   ]
 }
