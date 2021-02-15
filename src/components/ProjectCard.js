@@ -56,8 +56,8 @@ function ProjectCard({ project }) {
           { nameReplaced }
         </h3>
         <p>{ `${shortDescription}` }</p>
-        <p>{ `Neste projeto usei ${stacks}` }</p>
-        <p>{ `Prazo de ${time}` }</p>
+        <p>{ stacks }</p>
+        <p>{ time }</p>
         {/* <Link to={`/projects/${name}`}>Detalhes</Link> */}
         <a className="project-button" target="_blank" rel="noreferrer" href={ url }>
           <img src={ gitHubIcon } alt="" />
