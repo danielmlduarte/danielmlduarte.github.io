@@ -1,77 +1,140 @@
 .home-main {
-  background-color: #B1D6D9;
-  height: 600px;
-  margin: 0 10px;
+  background-color: #b1d6d9;
+  height: 773px;
+  margin: 0 10px 40px;
 }
 
 .home-image {
+  margin: 0 auto;
+  opacity: 0.1;
   position: absolute;
-  left: 10px;
-  top: 175px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 99%;
+}
+
+.home-button {
+  background-color: #d89229;
+  border-color: #d89229;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  color: white;
+  font-family: Roboto , sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 35px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  width: 300px;
+}
+
+.home-button:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.home-avatar {
+  border-radius: 50%;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 200px;
+}
+
+.home-main-content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 200px;
+  position: relative;
 }
 
 .home-speak-text {
-  position: absolute;
-  left: 185px;
-  top: 275px;
-  width: 350px;
-  font-family: 'Coming Soon', cursive;
-  font-style: normal;
-  font-weight: normal;
+  color: #ffdfff;
+  font-family: Coming Soon , cursive;
   font-size: 20px;
+  font-style: normal;
+  left: 185px;
+  letter-spacing: -0.333px;
   line-height: 31px;
+  position: absolute;
   text-align: center;
-  letter-spacing: -0.333333px;
-  color: #FFFFFF;
+  top: 375px;
+  width: 350px;
 }
 
 .home-text {
-  position: absolute;
-  right: 20%;
-  top: 250px;
-  width: 450px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  color: white;
+  font-family: Roboto , sans-serif;
   font-size: 30px;
+  font-style: normal;
+  letter-spacing: -0.333px;
   line-height: 50px;
   text-align: left;
-  letter-spacing: -0.333333px;
-  color: black
+  width: 450px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and ( max-width : 1400px ) {
+
   .home-speak-text {
     display: none;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and ( max-width : 990px ) {
+
+  .home-avatar {
+    margin: 0 20px;
+  }
+}
+
+@media screen and ( max-width : 810px ) {
+
+  .home-main-content {
+    padding-top: 20px;
+  }
+
+  .home-text-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-button {
+    margin: auto;
+  }
+}
+
+@media screen and ( max-width : 700px ) {
+
   .home-image {
-    opacity: 70%;
+    opacity: 0.3;
+    top: 175px;
     width: 95%;
   }
 
   .home-text {
-    text-align: center;
-    position: relative;
-    margin: auto;
-    right: 0;
-    top: 200px;
-    left: 0;
     bottom: 0;
-    width: 95%;
     color: white;
+    font-size: 25px;
+    left: 0;
+    line-height: 30px;
+    margin: 25px auto;
+    position: relative;
+    right: 0;
+    text-align: center;
+    width: 95%;
   }
 
   .home-main {
-    width: 95%;
     margin: auto;
+    width: 95%;
   }
 }
 
 
 .home-text span {
-  color: #D89229;
+  color: #d89229;
 }

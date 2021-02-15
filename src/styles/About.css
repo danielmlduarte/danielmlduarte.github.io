@@ -1,13 +1,13 @@
 .about-container {
+  background-color: #fafafa;
   display: flex;
   margin: auto;
   width: 70%;
-  background-color: #e5e5e55d;
 }
 
 .about-container-text {
-  width: 60%;
   margin: auto;
+  width: 60%;
 }
 
 .about-container-stacks {
@@ -18,59 +18,67 @@
 }
 
 .about-container-text img {
-  margin: 10px auto;
   height: 100px;
+  margin: 50px auto 80px;
 }
 
 .about-container-text h3 {
-  margin: 10px 0;
+  color: #d89229;
   font-size: 44px;
+  padding-top: 50px;
 }
 
 .about-container-text h5 {
-  margin: 20px 0;
   font-size: 24px;
+  margin: 20px 0;
 }
 
 .about-container-text p {
-  margin: 20px 0;
   font-size: 18px;
+  margin: 20px 0;
 }
 
 .about-photo-container {
-  width: 50%;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  margin-top: 20px;
   justify-content: space-around;
+  margin: 40px auto 100px;
+  width: 50%;
 }
 
 .about-photo {
-  margin: 10px 10px;
-  width: 150px;
   border: 5px solid #e5e5e55d;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 2px grey;
+  margin: 10px;
+  width: 150px;
 }
 
 .carousel-photo {
-  margin: 20px auto;
-  display: none;
-  width: 250px;
   border: 5px solid #e5e5e55d;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 2px grey;
+  display: none;
+  margin: 20px auto;
+  width: 250px;
 }
 
-@media screen and (max-width: 682px) {
+@media screen and ( max-width : 682px ) {
+
   .carousel-photo {
     display: block;
   }
+
   .about-photo-container {
     display: none;
   }
+
   .about-container {
     width: 90%;
+  }
+
+  .about-container-text {
+    text-align: justify;
+    width: 80%;
   }
 }

@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import projectsReducer from './reducers/projectsReducer';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import projectsReducer from './reducers/projectsReducer';
 
 const rootReducer = combineReducers({ projectsReducer });
 

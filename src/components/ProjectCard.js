@@ -1,55 +1,80 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { fetchGitHubProjectInfos, fetchGitHubProjectImage } from '../services/GitApi';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import { fetchGitHubProjectImage } from '../services/GitApi';
 import gitHubIcon from '../Images/github-brands.svg';
 import bgProject from '../Images/bg-project.jpg';
 
-class ProjectCard extends Component {
-  constructor() {
-    super()
-  
-    this.state = {
-       imageUrl: '',
-    }
-  }
+function ProjectCard({ project }) {
+  const [stacks, setStacks] = useState('');
+  const [time, setTime] = useState('');
+  const [shortDescription, setShortDescription] = useState('');
 
-  async componentDidMount() {
-    const { project: { files } } = this.props;
+  const reader = (file) => {
+    if (file) {
+      return new Promise((resolve) => {
+        const fileReader = new FileReader();
+        fileReader.onload = () => resolve(fileReader.result);
+        fileReader.readAsText(file);
+      });
+    }
+  };
+
+  const readFile = async (file) => {
+    try {
+      const result = await reader(file);
+      return result;
+    } catch (error) {
+      return error;
+    }
+  };
+
+  const fetchProjectInfos = async () => {
+    const { files } = project;
     const imageUrl = await fetchGitHubProjectImage(files);
-    this.setState({
-      imageUrl,
-    });
-  }
-  
-  render() {
-    const { project: { url } } = this.props;
-    let { project: { name } } = this.props;
-    name = name.replaceAll('-', ' ');
-    name = name.toUpperCase();
-    let { imageUrl } = this.state;
-    imageUrl = (!imageUrl) ? bgProject : imageUrl;
-    return (
-      <div className="project-card">
-        <div className="project-image">
-          <img src={imageUrl} alt=""/>
-        </div>
-        <div className="project-info">
-          <h3>
-            {name}
-          </h3>
-          <Link to={`/projects/${name}`}>Detalhes</Link>
-          <a className="project-button" target="_blank" href={url}>
-            <img src={gitHubIcon} alt=""/>
-            Visite o repositório
-          </a>
-          {/* <a target="_blank" href={exeUrl}>Execute o projeto</a> */}
-        </div>
+    if (imageUrl !== '') {
+      let descriptions = await readFile(imageUrl);
+      descriptions = descriptions.split('\n');
+      setStacks(descriptions[0]);
+      setTime(descriptions[1]);
+      setShortDescription(descriptions[2]);
+    }
+  };
+
+  useEffect(() => {
+    fetchProjectInfos();
+  });
+
+  const { url, name } = project;
+  const nameReplaced = name.replaceAll('-', ' ').toUpperCase();
+  return (
+    <div className="project-card">
+      <div className="project-image">
+        <img src={ bgProject } alt="" />
       </div>
-    )
-  }
+      <div className="project-info">
+        <h3>
+          { nameReplaced }
+        </h3>
+        <p>{ `${shortDescription}` }</p>
+        <p>{ `Neste projeto usei ${stacks}` }</p>
+        <p>{ `Prazo de ${time}` }</p>
+        {/* <Link to={`/projects/${name}`}>Detalhes</Link> */}
+        <a className="project-button" target="_blank" rel="noreferrer" href={ url }>
+          <img src={ gitHubIcon } alt="" />
+          Visite o repositório
+        </a>
+        {/* <a target="_blank" href={exeUrl}>Execute o projeto</a> */}
+      </div>
+    </div>
+  );
 }
 
-export default ProjectCard
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    url: PropTypes.string.isRequired,
+    files: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
-
+export default ProjectCard;
