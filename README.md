@@ -1,6 +1,6 @@
 # Portfólio GitHub de Daniel Duarte
 
-Página criada com a intenção de divulgação e como for de consolidação do conhecimento
+Página criada com a intenção de divulgação e como forma de consolidação do conhecimento
 
 ## Técnologias usadas:
 
