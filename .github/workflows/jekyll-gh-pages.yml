@@ -39,7 +39,7 @@ jobs:
         npm i
     - name: Production Build
       run: |
-        npm run build-production
+        npm run build
         with:
           source: ./
           destination: ./build
