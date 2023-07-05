@@ -42,9 +42,6 @@ jobs:
     - name: Production Build
       run: |
         npm run build
-        with:
-          source: ./
-          destination: ./build
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
 
