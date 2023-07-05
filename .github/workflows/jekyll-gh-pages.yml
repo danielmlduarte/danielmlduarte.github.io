@@ -30,18 +30,17 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.7.0        
       - name: npm install
         uses: Jaid/action-npm-install@v1.2.4
+      - name: Build Yarn and npm
+        uses: linchpin/action-build-yarn-npm@master
+        with:
+          source: ./
+          destination: ./build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
 
           
 
