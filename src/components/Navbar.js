@@ -12,7 +12,6 @@ export default function NavBar() {
         <Link className="navbar-link" to="/">HOME</Link>
         <Link className="navbar-link" to="/about">SOBRE MIM</Link>
         <Link className="navbar-link" to="/projects">PROJETOS</Link>
-        <Link className="navbar-link-button" to="/contact">ENTRE EM CONTATO COMIGO</Link>
       </div>
     </div>
   );
