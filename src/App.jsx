@@ -90,7 +90,7 @@ function App() {
           <h1>NDG Sistemas</h1>
           <p className="heroLead">Desenvolvimento de software exclusivo, robusto e pronto para escalar o seu negócio.</p>
           <div className="heroActions">
-            <a className="primaryButton" href="#contato">Agendar diagnóstico <span>↗</span></a>
+            <a className="primaryButton" href="#contato">Solicitar orçamento <span>↗</span></a>
             <a className="textLink" href="#solucoes">Conhecer soluções ↓</a>
           </div>
         </div>
