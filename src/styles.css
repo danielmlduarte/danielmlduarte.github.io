@@ -58,9 +58,9 @@ p {
 }
 .brand img {
   display: block;
-  height: 42px;
+  height: 100px;
   object-fit: contain;
-  width: 100px;
+  width: 200px;
 }
 .brandName {
   color: var(--ink);
@@ -506,16 +506,19 @@ blockquote footer {
   font-size: 0.76rem;
   gap: 20px;
   grid-template-columns: 1fr auto 1fr;
-  padding: 34px clamp(20px, 5vw, 72px);
+  padding: 10px clamp(20px, 5vw, 72px);
 }
 .siteFooter .brandName {
   color: #fff;
 }
 .siteFooter .brand img {
-  height: 48px;
-  width: 48px;
+  height: 100px;
+  width: 300px;
 }
-.siteFooter p,
+.siteFooter p {
+  text-align: center;
+  color: #ffffff80;
+}
 .siteFooter > span {
   color: #ffffff80;
 }

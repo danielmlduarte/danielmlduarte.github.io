@@ -75,8 +75,7 @@ function App() {
     <main>
       <header className="siteHeader">
         <a className="brand" href="#inicio" aria-label="NDG Sistemas, início">
-          <img src="/ndg-hero.png" alt=""/>
-          <span className="brandName">NDG <strong>Sistemas</strong></span>
+          <img src="/ndg-header-color.png" alt=""/>
         </a>
         <nav className="navLinks" aria-label="Navegação principal">
           <a href="#servicos">Serviços</a><a href="#processo">Processo</a><a href="#depoimentos">Resultados</a>
@@ -132,7 +131,7 @@ function App() {
       </section>
 
       <section className="metrics" aria-label="Indicadores">
-        {[['+16', 'anos de experiência'], ['100%', 'projetos entregues no prazo'], ['Alta', 'escalabilidade tecnológica']].map(([value, label]) => <div className="metric" key={label}><strong>{value}</strong><span>{label}</span></div>)}
+        {[['+5', 'anos de experiência'], ['100%', 'projetos entregues no prazo'], ['Alta', 'escalabilidade tecnológica']].map(([value, label]) => <div className="metric" key={label}><strong>{value}</strong><span>{label}</span></div>)}
       </section>
 
       <section className="process section" id="processo">
@@ -159,7 +158,7 @@ function App() {
           <input type="hidden" name="_subject" value="Novo pedido de orçamento pelo site" />
           <input type="hidden" name="_template" value="table" />
           <label>Nome completo<input name="nome" required placeholder="Seu nome" /></label>
-          <label>E-mail corporativo<input name="email" type="email" required placeholder="voce@empresa.com" /></label>
+          <label>E-mail<input name="email" type="email" required placeholder="voce@empresa.com" /></label>
           <label>WhatsApp / telefone<input name="telefone" type="tel" required placeholder="(31) 99999-9999" /></label>
           <label>Sobre o projeto<textarea name="mensagem" rows="4" placeholder="Qual problema você precisa resolver?" /></label>
           <button className="primaryButton" type="submit" disabled={formStatus === 'sending'}>
@@ -170,7 +169,10 @@ function App() {
         </form>
       </section>
 
-      <footer className="siteFooter"><a className="brand" href="#inicio" aria-label="NDG Sistemas, início"><img src="/ndg-hero.png" alt="" /><span className="brandName">NDG <strong>Sistemas</strong></span></a><p>Desenvolvimento de software & soluções corporativas.</p><span>© 2026 NDG Sistemas</span></footer>
+      <footer className="siteFooter">
+        <a className="brand" href="#inicio" aria-label="NDG Sistemas, início"><img src="/ndg-footer-alpha.png" alt="" /></a>
+        <p><strong>atendimento@ndgsistemas.com.br</strong><br/>Lagoa Santa, MG<br/>Desenvolvimento de software & soluções corporativas.</p>
+        <span>© 2026 NDG Sistemas</span></footer>
     </main>
   );
 }
